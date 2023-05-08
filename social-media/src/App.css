@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+}
+.reg-background{
+  background-image: url(/home/komal/NewP/social-media/public/6628908.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 190vh;
+  position: fixed;
+  margin: auto;
+}
+/* .overlay{
+  background: #0c0f13;
+  opacity: .1;
+  height: 100vh;
+  width: 190vh;
+  z-index: -100;
+} */
+.container{
+  background: #42003b;
+  opacity: 0.8;
+  margin: auto;
+  margin-top: 120px;
+  border-radius: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 750px;
+  width: 550px;
+ /* z-index: -100; */
+}
+.head {
+  margin-top: 60px;
+  color: white;
+  font-size: 50px;
+  z-index: 100;
+  font-family: 'Lemon', cursive;
+}
+.inputs{
+  margin-top: 30px;
+}
+.container input{
+  border: none;
+  border-bottom: 1.5px solid #fff;
+  background: transparent;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  width: 450px;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.container input::placeholder{
+  color: #fff;
+}
+.signup{
+  border: none;
+  background-image: linear-gradient(to right,#1e0556, #7f1c6c);
+  height: 60px;
+  width: 100px;
+  border-radius: 15px;
+  z-index: 400;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 40px;
+  font-family: 'Lemon', cursive;
+  opacity: 1;
+}
+.google{
+  border: none;
+  background-image: linear-gradient(to right,#1e0556, #7f1c6c);
+  height: 60px;
+  width: 200px;
+  border-radius: 15px;
+  z-index: 400;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 20px;
+  font-family: 'Lemon', cursive;
+  opacity: 1;
+}
+.container p{
+  color: #fff;
+  font-size: 20px;
+}
+.container span{
+  color: #ed33da;
+  font-family: 'Lemon', cursive;
+}
