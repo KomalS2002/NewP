@@ -7,11 +7,11 @@
 ::webkit-scrollbar {
     width: 3px;
 }
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track{
     background-color: #ccb7ae;
 }
-::-webkit-scrollbar-thumb {
-    background-color: #1e0c62;
+::-webkit-scrollbar-thumb{
+    background-color: #565264;
 }
 .sidebarWrapper{
     padding: 20px;

@@ -1,5 +1,5 @@
 import React from 'react'
-import Upperbar from '../../components/Upperbar.jsx';
+import Upperbar from '../../components/upperbar/Upperbar.jsx';
 import Sidebar from '../../components/sidebar/Sidebar.jsx';
 import Feed from '../../components/feed/Feed.jsx';
 import Rightbar from '../../components/rightbar/Rightbar.jsx';
