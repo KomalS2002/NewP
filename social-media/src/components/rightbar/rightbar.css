@@ -1,3 +1,11 @@
 .rightbar{
-    flex: 2.5;
+    flex: 3;
+}
+.rightbarWrapper{
+    margin: 20px 20px 0 0;
+}
+.birthdayImg{
+    font-size: 400px;
+    color: #a6808c;
+    margin-right: 10px;
 }
