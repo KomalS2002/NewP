@@ -1,11 +1,62 @@
 .rightbar{
-    flex: 3;
+    flex: 2.5;
+    background-color: #d6cfcb;
 }
 .rightbarWrapper{
     margin: 20px 20px 0 0;
+}
+.birthdayContainer{
+    display: flex;
+    align-items: center;
 }
 .birthdayImg{
     font-size: 400px;
     color: #a6808c;
     margin-right: 10px;
+}
+.birthdayText{
+    font-weight: 300;
+    font-style: 15px;
+}
+.rightbarAd{
+    width: 100%;
+    margin: 30px 5px;
+    border-radius: 10px;
+}
+.rightbarTitle{
+    margin-bottom: 20px;
+}
+.rightbarFriendList{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.rightbarFriend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.rightbarProfileImgContainer{
+    margin-right: 10px;
+    position: relative;
+}
+.rightbarProfileImg{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2.8px solid #a6808c;
+}
+.rightbarOnline{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: green;
+    top: -2px;
+    right: 0px;
+    position: absolute;
+}
+.rightbarUsername{
+    font-weight: 500;
 }
