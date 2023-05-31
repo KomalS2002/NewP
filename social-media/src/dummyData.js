@@ -1,22 +1,23 @@
 export const Users = [
-{id:1,
-profilePicture:"/assets/Soul.jpeg",
-username: "Koko"
+{  
+    id:1,
+    profilePicture:"/assets/Soul.jpeg",
+    username: "Koko",
 },
 {
     id:2,
     profilePicture: "/assets/friend.png",
-    username:"Devi Prasad"
+    username:"Devi Prasad",
 },
 {
     id:3,
     profilePicture: "/assets/Soul.jpeg",
-    username:"Alex Turner"
+    username:"Alex Turner",
 },
 {
     id:4,
     profilePicture: "/assets/friend.png",
-    username:"Robert"
+    username:"Robert",
 },
 ];
 
@@ -51,18 +52,10 @@ export const Posts = [
 {
     id:4,
     photo:"/assets/Cosmic design to inspire your next stellar project.jpeg",
-    date:"18 mins ago",
+    date:"18 hours ago",
     userId:4,
     like:90,
     comment:12,
 },
-{
-    id:5,
-    photo:"/assets/post1.png",
-    desc:"pssspsssss",
-    date:"56 mins ago",
-    userId:5,
-    like:29,
-    comment:0,
-},
+
 ];
