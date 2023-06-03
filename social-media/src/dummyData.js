@@ -1,22 +1,22 @@
 export const Users = [
 {  
     id:1,
-    profilePicture:"/assets/Soul.jpeg",
+    profilePicture:"Soul.jpeg",
     username: "Koko",
 },
 {
     id:2,
-    profilePicture: "/assets/friend.png",
+    profilePicture:"friend.png",
     username:"Devi Prasad",
 },
 {
     id:3,
-    profilePicture: "/assets/Soul.jpeg",
+    profilePicture:"Soul.jpeg",
     username:"Alex Turner",
 },
 {
     id:4,
-    profilePicture: "/assets/friend.png",
+    profilePicture:"friend.png",
     username:"Robert",
 },
 ];
@@ -24,7 +24,7 @@ export const Users = [
 export const Posts = [
 {
     id:1,
-    photo:"/assets/Cosmic design to inspire your next stellar project.jpeg",
+    photo:"Cosmic design to inspire your next stellar project.jpeg",
     desc:"let's see how the another world looks like.",
     date:"12 mins ago",
     userId:1,
@@ -33,7 +33,7 @@ export const Posts = [
 },
 {
     id:2,
-    photo:"/assets/post1.png",
+    photo:"post1.png",
     desc:"hello there.",
     date:"7 mins ago",
     userId:2,
@@ -42,7 +42,7 @@ export const Posts = [
 },
 {
     id:3,
-    photo:"/assets/post2.png",
+    photo:"post2.png",
     desc:"good morning.",
     date:"8 mins ago",
     userId:3,
@@ -51,7 +51,7 @@ export const Posts = [
 },
 {
     id:4,
-    photo:"/assets/Cosmic design to inspire your next stellar project.jpeg",
+    photo:"Cosmic design to inspire your next stellar project.jpeg",
     date:"18 hours ago",
     userId:4,
     like:90,

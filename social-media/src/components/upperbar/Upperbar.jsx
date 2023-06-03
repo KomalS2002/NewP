@@ -3,12 +3,16 @@ import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
 import ChatIcon from '@mui/icons-material/Chat';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import { Link } from "react-router-dom";
 
 const upperbar = () => {
   return (
     <div className="upperbar">
       <div className="upperbarLeft">
+        <Link to="/" style={{textDecoration:"none"}}>
         <span className="logo">Social-Media</span>
+        </Link>
+        
       </div>
       <div className="upperbarMiddle">
         <div className="searchbar">

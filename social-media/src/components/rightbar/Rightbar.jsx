@@ -4,7 +4,7 @@ import Online from "../online/Online";
 import {Users} from "../../dummyData.js"
 
 export default function Rightbar({profile}) {
-
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 const HomeRightbar =()=>{
   return (
     <>
@@ -45,27 +45,27 @@ const ProfileRightbar =()=>{
       <h4 className="rightbarTitle">User Friends</h4>
       <div className="rightbarFollowings">
         <div className="rightbarFollowing">
-          <img src="/assets/friend.png" alt="" className="rightbarFollowingImg" />
+          <img src={`${PF}friend.png`} alt="" className="rightbarFollowingImg" />
           <span className="rightbarFollowingName">Devi Prasad</span>
         </div>
         <div className="rightbarFollowing">
-          <img src="/assets/friend.png" alt="" className="rightbarFollowingImg" />
+          <img src={`${PF}friend.png`} alt="" className="rightbarFollowingImg" />
           <span className="rightbarFollowingName">Devi Prasad</span>
         </div>
         <div className="rightbarFollowing">
-          <img src="/assets/friend.png" alt="" className="rightbarFollowingImg" />
+          <img src={`${PF}friend.png`} alt="" className="rightbarFollowingImg" />
           <span className="rightbarFollowingName">Devi Prasad</span>
         </div>
         <div className="rightbarFollowing">
-          <img src="/assets/friend.png" alt="" className="rightbarFollowingImg" />
+          <img src={`${PF}friend.png`} alt="" className="rightbarFollowingImg" />
           <span className="rightbarFollowingName">Devi Prasad</span>
         </div>
         <div className="rightbarFollowing">
-          <img src="/assets/friend.png" alt="" className="rightbarFollowingImg" />
+          <img src={`${PF}friend.png`} alt="" className="rightbarFollowingImg" />
           <span className="rightbarFollowingName">Devi Prasad</span>
         </div>
         <div className="rightbarFollowing">
-          <img src="/assets/friend.png" alt="" className="rightbarFollowingImg" />
+          <img src={`${PF}friend.png`} alt="" className="rightbarFollowingImg" />
           <span className="rightbarFollowingName">Devi Prasad</span>
         </div>
       </div>
@@ -75,8 +75,8 @@ const ProfileRightbar =()=>{
   return (
     <div className="rightbar">
       <div className="rightbarWrapper">
-        <ProfileRightbar/>
-        {/* <HomeRightbar/> */}
+        {profile? <ProfileRightbar/>: <HomeRightbar/>}
+        
       </div>
     </div>
   )
