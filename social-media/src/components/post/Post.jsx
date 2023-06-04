@@ -6,7 +6,8 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 // import {Users} from "../../dummyData.js"
 import { useState ,useEffect} from "react";
 import axios from "axios";
-import {format} from "timeago.js"
+import {format} from "timeago.js";
+import {Link} from "react-router-dom";
 
 
 export default function Post({post}) {
@@ -17,7 +18,7 @@ const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 
 useEffect(()=>{ 
     const fetchUsers = async()=>{
-    const res = await axios.get(`users/${post.userId}`);
+    const res = await axios.get(`/users?userId=${post.userId}`);
     // console.log(res);
     setUser(res.data);
     };
@@ -33,7 +34,9 @@ const handleLike=()=>{
         <div className="postWrapper">
             <div className="postTop">
                 <div className="postTopLeft">
+                    <Link to={`profile/${user.username}`}>
                     <img  className="postProfileImg" src={user.profilePicture || PF+"pngwing.com.png"} alt=""  />
+                    </Link>
                      <span className="postUsername">{user.username}</span>
                      <span className="postDate">{format(post.createdAt)}</span>
                 </div>
