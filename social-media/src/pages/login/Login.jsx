@@ -32,7 +32,7 @@ export default function Login() {
             <br />
             </div>
             <div className="loginButtons">
-            <button className="loginSubmit">{isFetching? <CircularProgress /> : "Login"}</button>
+            <button className="loginSubmit" type="submit">{isFetching? <CircularProgress /> : "Login"}</button>
             <br />
             <span className="loginSpan">Don't have an account ?</span>
             <br />

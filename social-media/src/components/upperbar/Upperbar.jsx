@@ -4,8 +4,12 @@ import PersonIcon from '@mui/icons-material/Person';
 import ChatIcon from '@mui/icons-material/Chat';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../context/AuthContext";
 
-const upperbar = () => {
+const Upperbar = () => {
+const {user} = useContext(AuthContext);
+const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   return (
     <div className="upperbar">
       <div className="upperbarLeft">
@@ -42,10 +46,12 @@ const upperbar = () => {
           </div>
           
         </div>
-        <img className= "upperbarImage" src="/assets/Soul.jpeg" alt="" />
+        <Link to={`/profile/${user.username}`}>
+        <img className= "upperbarImage" src={user.profilePicture ? PF+user.profilePicture: PF+"user.png"} alt="" />
+        </Link>
       </div>
     </div>
   )
 }
 
-export default upperbar
+export default Upperbar
