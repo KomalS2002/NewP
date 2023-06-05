@@ -3,14 +3,18 @@ import PermMediaIcon from '@mui/icons-material/PermMedia';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
+import {AuthContext} from "../../context/AuthContext"
+import { useContext } from "react";
 
 export default function Share() {
+const {user} = useContext(AuthContext);
+const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   return (
     <div className="share">
         <div className="shareWrapper">
         <div className="shareTop">
-            <img src="/assets/Soul.jpeg" alt="" className="shareProfileImg" />
-            <input className="shareInput" type="text" placeholder="What's on your mind ? Tell us!"/>
+            <img src={user.profilePicture ? PF+user.profilePicture : PF+"user.png"} alt="" className="shareProfileImg" />
+            <input className="shareInput" type="text" placeholder={"What's on your mind " + user.username +"? Tell us!"}/>
         </div>
         <hr className="shareHr"/>
         <div className="shareBottom">
