@@ -3,6 +3,7 @@ import PermMediaIcon from '@mui/icons-material/PermMedia';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
+import CancelIcon from '@mui/icons-material/Cancel';
 import {AuthContext} from "../../context/AuthContext"
 import { useContext, useRef, useState } from "react";
 import axios from "axios";
@@ -55,6 +56,7 @@ window.location.reload();
         {file && (
             <div className="shareImgContainer">
                 <img src={URL.createObjectURL(file)} alt="" className="shareImg" />
+                <CancelIcon className="shareCancelImg" onClick={()=>setFile(null)}/>
             </div>
         )}
         <form className="shareBottom" onSubmit={submitHandler}>
