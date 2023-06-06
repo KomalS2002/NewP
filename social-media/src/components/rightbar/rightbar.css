@@ -97,3 +97,18 @@ font-weight: 400;
     border-radius: 10px;
     object-fit: cover;
 }
+.rightbarFollowButton{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    background-color: #a6808c;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}

@@ -19,11 +19,12 @@ const newPost = {
 userId:user._id,
 desc:desc.current.value 
 }
+// couldn't fetch posts properly perhaps the problem is with file naming with date attribute
 if(file){
     const data = new FormData();
-    const fileName = Date.now() +file.name;
-    data.append("file", file);
+    const fileName = Date.now() + file.name;
     data.append("name",fileName);
+    data.append("file", file);
     newPost.img = fileName;
     try{
     await axios.post("/upload", data);
@@ -51,6 +52,11 @@ window.location.reload();
             />
         </div>
         <hr className="shareHr"/>
+        {file && (
+            <div className="shareImgContainer">
+                <img src={URL.createObjectURL(file)} alt="" className="shareImg" />
+            </div>
+        )}
         <form className="shareBottom" onSubmit={submitHandler}>
             <div className="shareOptions">
                 <label htmlFor="file" className="shareOption">
